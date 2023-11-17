@@ -22,12 +22,12 @@ scripts/long_term_forcast 경로에 위치한 Autoformer.sh , Informer.sh, Trans
 명령어에 포함되는 parameter를 변경해 나가면서 모델을 실행합니다.
 
 <주요 parameter> 
-root_path : data folder path 
-data_path : file name  
-model : model_name( Transformer , Informer, Autoformer) 
-seq_len : input sequence length (default : 24)
-label_len : start token length (default : 12 )
-pred_len : prediction sequence length (default : 24)
+    - root_path : data folder path 
+    - data_path : file name  
+    - model : model_name( Transformer , Informer, Autoformer) 
+- seq_len : input sequence length (default : 24)
+- label_len : start token length (default : 12 )
+- pred_len : prediction sequence length (default : 24)
 data : dataset type (custom)
 feature : forecasting type ( M: Multivariate predict multivariate) 
 e_layer : number of encoder layers
