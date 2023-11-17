@@ -2,6 +2,8 @@
 
 - Transformer 기반 모델과 데이터 증강을 활용한 태양광 발전량 예측 최적화 연구
 
+
+
 ## 실행방법
 1. python 3.8 에서 실행합니다. 아래 명령어로 포함된 라이브러리를 설치합니다.
     ```pip install -r requirements.txt```
@@ -39,3 +41,5 @@ scripts/long_term_forcast 경로에 위치한 Autoformer.sh , Informer.sh, Trans
 
 
  
+# 데이터는 용량이 큰 관계로 구글드라이브에 등록되어있습니다.
+https://drive.google.com/drive/folders/1l89uy8DHKoaN10Ih8nbMyg1fe4RVnSuD
