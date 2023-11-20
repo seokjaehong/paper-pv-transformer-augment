@@ -8,17 +8,23 @@
 1. python 3.8 에서 실행합니다. 아래 명령어로 포함된 라이브러리를 설치합니다.
     ```pip install -r requirements.txt```
 2. 데이터 세팅
-- 데이터에 대한 전처리는 jupyter notebook으로 수행합니다.
-- [0] clean data.ipynb
+- 데이터에 대한 전처리 및 추출은 jupyter notebook으로 수행합니다.
+- [0] Preprocess Dataset 추출.ipynb
     - 데이터 중 시계열정보에 해당하는 정보를 datetime 형태로 바꾸고, 데이터에 대한 속성을 파악
-- [1] Data PreProcess with Augment.ipynb
-    - 트레이닝/테스트 세트를 실험별로 분할
-    - Data Augment 에 대한 코드 및 데이터 분포 확인
-- [2] Final clean dataset.ipynb
-    - 각 시나리오에 해당하는 데이터세트를 csv파일로 export
-    - 추가실험 : Time Dual Embedding / PCA 
+    - 실험1     
+        - 일부 상수값, Null, 컬럼을 제외한 속성을 기준으로 CNN,LSTM,XGBOOST, TRANSFORMER, INFORMER, AUTOFORMER에 대한 실험을 진행 
+    - 실험2
+        - 학습/테스트 데이터를 각 기간대로 분할
+        - MEAN, MEDIAN에 대한 집계 코드 하여 - 각 시나리오에 해당하는 데이터세트를 csv파일로 export
+    - 실험3
+        - Data Augment 에 대한 코드 작성 하여 csv 파일로 export 
+    - 기타 예정중인 추가실험 : Time Dual Embedding / PCA 
+3. CNN,LSTM,XGBOOST에 대한 실험 코드
+    - CNN : learning_cnn.ipynb
+    - lstm  : learning_lstm.ipynb
+    - xgb : learning_xgb.ipynb
 
-3. 모델 실행 방법
+4. Tranformer 기반 모델 실행 방법
 scripts/long_term_forcast 경로에 위치한 Autoformer.sh , Informer.sh, Transformer.sh 파일 내에 각각 위치한 python 명령어를 실행합니다.명령어에 포함되는 parameter를 변경해 나가면서 모델을 실행합니다.
 
 - <주요 parameter> 
