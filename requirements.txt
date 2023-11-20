@@ -76,6 +76,7 @@ Django==4.0
 django-storages==1.12.3
 docutils==0.17
 eccodes==1.4.0
+einops==0.7.0
 entrypoints==0.3
 et-xmlfile==1.0.1
 fastapi==0.89.1
@@ -215,6 +216,7 @@ partd==1.2.0
 path==15.1.2
 pathlib2==2.3.5
 pathspec==0.7.0
+patool==1.12
 patsy==0.5.1
 pendulum==2.1.2
 pep8==1.7.1
