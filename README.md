@@ -1,4 +1,4 @@
-# paper-pv-transformer-augment
+![image](https://github.com/seokjaehong/paper-pv-transformer-augment/assets/34717277/b0f44e00-0f74-460a-a664-c23840782281)# paper-pv-transformer-augment
 
 - Transformer 기반 모델과 데이터 증강을 활용한 태양광 발전량 예측 최적화 연구
 
@@ -45,7 +45,29 @@ scripts/long_term_forcast 경로에 위치한 Autoformer.sh , Informer.sh, Trans
 - des :  description 
 - train_epochs : train epochs
 
+- 
+
 
  
 # 데이터는 용량이 큰 관계로 구글드라이브에 등록되어있습니다.
 https://drive.google.com/drive/folders/1l89uy8DHKoaN10Ih8nbMyg1fe4RVnSuD
+
+[s2설명]
+case1은 mean
+case2는 max
+case3은 median
+
+[s3 설명]
+시나리오번호 4 는 실험2의 시나리오 번호1에서 시작 
+시나리오번호 5 는 실험2의 시나리오 번호2에서 시작 
+시나리오번호 6 는 실험2의 시나리오 번호3에서 시작 
+
+1 aug :2 sigma : 0.01
+2 aug :2 sigma : 0.05
+3 aug :2 sigma : 0.1
+4 aug :4 sigma : 0.01
+5 aug :4 sigma : 0.05
+6 aug :4 sigma : 0.1
+7 aug :8 sigma : 0.01
+8 aug :8 sigma : 0.05
+9 aug :8 sigma : 0.1
