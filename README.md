@@ -1,4 +1,4 @@
-![image](https://github.com/seokjaehong/paper-pv-transformer-augment/assets/34717277/b0f44e00-0f74-460a-a664-c23840782281)# paper-pv-transformer-augment
+# paper-pv-transformer-augment
 
 - Transformer 기반 모델과 데이터 증강을 활용한 태양광 발전량 예측 최적화 연구
 
